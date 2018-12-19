@@ -240,9 +240,13 @@ function flowACE(dataTables) {
                         }
                     }
                 } else {
-                    $("#lakeWell-" + lakewellIndex + 1).append("<td>" + "N/A" + "</td>"); //Append N/A as the Flow Value to the row for the missing data
-                    lakewellIndex++;
-                    aceIndex--;
+                    if (!aceTimeGreater) {
+
+                        $("#lakeWell-" + lakewellIndex + 1).append("<td>" + "N/A" + "</td>"); //Append N/A as the Flow Value to the row for the missing data
+                        lakewellIndex++;
+                        aceIndex--;
+
+                    }
                 }
 
                 aceIndex++; // Increment loop counter ACE data and LakeWell template
