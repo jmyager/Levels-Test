@@ -1,14 +1,22 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+/* 
+hr {
+    height: 1px;
+    color: #28a745;
+    background-color: #28a745;
+    border: none;
+    } */
 
-a {
-    color: inherit;
-}
-
-h1 {
+.header-title {
+    font-weight: bold;
     margin-top: 5px;
     margin-bottom: 2px;
+}
+
+.container {
+    padding-top: 10px;
 }
 
 h2 {
@@ -21,13 +29,7 @@ h2 {
 }
 
 .active {
-    color: green;
-}
-
-/* Image CSS */
-
-.lake-thumb {
-    margin: 0 0 10%;
+    color: #28a745;
 }
 
 
@@ -51,7 +53,7 @@ h2 {
     font-size: 18px;
 }
 
-/* Page Styles */
+/* thisLake Styles */
 
 .lakeName {
     font-size: 24px;
@@ -71,6 +73,11 @@ h2 {
     width: 90%;
 }
 
+.current-subtext {
+    margin-bottom: 0px;
+
+}
+
 /* @media only screen and (max-width: 400px) {
     .current-wrapper {
       padding-top: 70px;
@@ -82,6 +89,14 @@ h2 {
 
 /* Lake Table */
 
+.lake-link {
+    color: black;
+}
+
+.lake-hr {
+    color: #28a745;
+}
+
 .lake-table {
     margin-bottom: 30px;
 }
@@ -92,19 +107,35 @@ h2 {
 
 .lake-table a {
     margin-bottom: 0;
+    display: block;
+    text-decoration: none;
+}
+
+.lake-table a:hover {
+    color: black;
+}
+
+.lake-table h5 {
+    margin: 0;
 }
 
 
-/* Front Page Images w/ Banners */
-
-.img-home {
-    position: relative;
+/* Cards on Home Page */
+.card-home {
     margin-bottom: 20px;
+    box-shadow: 1px 1px rgb(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-.img-banner {
-    position: absolute;
-    width: 100%;
-    top: 45%;
-    background-color: rgba(255, 255, 255, 0.5);
+.card-home:hover {
+    box-shadow: none;
+}
+
+.card-link {
+    text-decoration: none;
+    color: black;
+}
+
+.card-link:hover {
+    color: black;
 }
